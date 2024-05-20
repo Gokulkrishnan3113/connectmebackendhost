@@ -12,7 +12,7 @@ app.use((req, res, next) => {
   res.header("Access-Control-Allow-Credentials", true);
   next();
 });
-app.use(cors({origin: "https://connectme7176.netlify.app",}));//cross origin resource sharing
+//app.use(cors({origin: "https://connectme7176.netlify.app",}));//cross origin resource sharing
 app.use(express.json());
 app.use(cookieParser());
 const storage = multer.diskStorage({
